@@ -731,7 +731,7 @@ bool CPatternEditor::CursorUpdated()
 		std::tie(m_iPlayFrame, m_iPlayRow) = pSoundGen->GetPlayerPos();		// // //
 
 		if (m_bFollowMode) {
-			m_cpCursorPos.Ypos.Row = m_iPlayRow;
+			m_cpCursorPos.Ypos.Row = m_iPlayRow - 1;
 			m_cpCursorPos.Ypos.Frame = m_iPlayFrame;		// // //
 		}
 	}
