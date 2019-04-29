@@ -2615,9 +2615,9 @@ void CPatternEditor::OnMouseMove(UINT nFlags, const CPoint &point)
 		BeginMouseSelection(point);
 
 	// Auto-scrolling
-	if (m_bSelecting) {
-		AutoScroll(point, nFlags);
-	}
+	//if (m_bSelecting) {
+	//	AutoScroll(point, nFlags);
+	//}
 }
 
 void CPatternEditor::OnMouseDblClk(const CPoint &point)
