@@ -137,12 +137,12 @@ BEGIN
     END
     POPUP "&Edit"
     BEGIN
-        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM "&Undo\tCtrl+.",               ID_EDIT_UNDO
         MENUITEM "&Redo\tCtrl+Y",               ID_EDIT_REDO
         MENUITEM SEPARATOR
-        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
-        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
-        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "Cu&t\tCtrl+Q",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+J",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+K",              ID_EDIT_PASTE
         POPUP "Paste Specia&l"
         BEGIN
             MENUITEM "&Mix",                        ID_EDIT_PASTEMIX
@@ -339,12 +339,12 @@ IDR_PATTERN_POPUP MENU
 BEGIN
     POPUP "Popup"
     BEGIN
-        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM "&Undo\tCtrl+.",               ID_EDIT_UNDO
         MENUITEM "&Redo\tCtrl+Y",               ID_EDIT_REDO
         MENUITEM SEPARATOR
-        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
-        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
-        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "Cu&t\tCtrl+Q",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+J",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+K",              ID_EDIT_PASTE
         MENUITEM "&Delete\tDel",                ID_EDIT_DELETE
         MENUITEM "Select &All\tCtrl+A",         ID_EDIT_SELECTALL
         MENUITEM SEPARATOR
@@ -490,14 +490,14 @@ END
 
 IDR_MAINFRAME ACCELERATORS
 BEGIN
-    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "J",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
     VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
-    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
-    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    "Q",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "K",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
     VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
     "Y",            ID_EDIT_REDO,           VIRTKEY, CONTROL, NOINVERT
     VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
-    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+	VK_OEM_1,            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
     VK_F4,          ID_FILE_CLOSE,          VIRTKEY, ALT, NOINVERT
     "E",            ID_FILE_CREATE_NSF,     VIRTKEY, CONTROL, NOINVERT
     "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
